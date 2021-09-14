@@ -1,3 +1,4 @@
+import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 
 
@@ -5,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <h1>jsjsjs</h1>
+      <Main/>
     </div>
   );
 }

@@ -3,46 +3,13 @@ import styled from 'styled-components';
 import mummy from '../images/svgs/mummy.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const NavWrapper = styled.div`
     padding: 1rem;
-    background: #000;
+    background: #EF8354;
     position: relative;
-    display: ${props => props.visibility ? 'block' : 'none'};
-    
-    
-    .closeB {
-        position: relative;
-        border-bottom: 1px dotted black;
-    }
-    .closeB .closeBB {
-        visibility: hidden;
-        background-color: black;
-        color: red;
-        font-weight: 900;
-        text-align: center;
-        border: 2px solid red;
-        padding: 0.5rem;
-        position: absolute;
-        z-index: 1;
-        right: 5px;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    .closeB:hover .closeBB {
-        visibility: visible;
-        opacity: 1;
-    }
-    .closebutton {
-        color: #fff;
-        position: absolute;
-        right: 0;
-        top: 0;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    
+
 `
 
 const Links = styled.div`
@@ -54,48 +21,66 @@ const LeftNav = styled.div`
     display:flex;
     align-items: center;
     font-weight: 900;
-    color: #fff;
+    color: #FFF;
+    .icons {
+        a {
+            color: #FFF;
+            padding-left: 2rem;
+            font-size: 2rem;
+            transition: all 0.15s ease-in-out;
+            :hover {
+                
+                color: #000;
+            }
+        }
+    }
     img {
-        width: 100px;
+        width: 50px;
     }
 `
 const RightNav = styled.div`
     a {
       text-decoration:none; 
-      color: #fff ;
+      color: #FFF;
       padding: 1rem;
       font-weight: 700;
+      transition: all 0.15s ease-in-out;
+      :hover {
+          border-bottom: 1px solid #fff;
+          color: #000;
+      }
     }
     
 `
 
+
+
 const Navbar = () => {
 
-    const [toggle, setToggle] = useState(true)
-    const handleToggle = () => {
-        setToggle(!toggle)
-    }
 
 
     return (
-        <NavWrapper visibility={toggle}>
-            <div className="closeB">
-                <span className="closeBB">DO NOT CLICK!!!</span>
-                <FontAwesomeIcon onClick={handleToggle} icon={faWindowClose} className="closebutton" />
-            </div>
+        <NavWrapper>
 
 
             <Links>
                 <LeftNav>
-                    <img src={mummy} alt="mummy" />
-                    <p>lookmummyicancode@gmail.com</p>
+                    <a href="/"><img src={mummy} alt="mummy" /></a>
+                    <div className="icons">
+                        <a href="https://github.com/laterinthepast" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://www.instagram.com/lookmummyicancode/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.linkedin.com/in/rafal-wrona/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    </div>
+
                 </LeftNav>
                 <RightNav>
-                    <a href="#work">work</a>
-                    <a href="#about">about</a>
+                    <a href="#projects">my projects</a>
+                    {/* <a href="#about">about</a> */}
                 </RightNav>
 
             </Links>
+
+
         </NavWrapper>
     )
 }
