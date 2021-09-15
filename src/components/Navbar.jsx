@@ -8,6 +8,7 @@ const NavWrapper = styled.div`
     padding: 1vw;
     background: #EF8354;
     position: relative;
+    height: 7vw;
     @media (max-width:760px){
         height: 15vw;
     }

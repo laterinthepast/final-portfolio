@@ -27,26 +27,24 @@ const Projects = styled.div`
     display: flex;
     flex-direction: column;
     .project {
-        &-1 {
-            background-color: #4F5D75;
-        }
-        &-2 {
+        &-2, &-1, &-3, &-4 {
             background-color: #f1faee;
-            flex-direction: column-reverse;
+            
         }
-        &-3 {
-            background-color: #000;
-        }
-        &-4 {
-            background-color: #669bbc;
+        
+    }
+    @media (max-width:760px){
+        .project {
+        &-2, &-4 {
             flex-direction: column-reverse;
+            }
         }
     }
 `
 const About = styled.div`
     display: flex;
     justify-content: space-evenly;
-    height: 95vh;
+    height: 90vh;
     .info {
         padding: 5vw;
         font-size: 2vw;
@@ -63,6 +61,10 @@ const About = styled.div`
         }
         span {
             font-weight: 900;
+        }
+        p {
+            font-weight: 100;
+            font-size: 1vw;
         }
     }
     img {
@@ -110,7 +112,7 @@ const WorkPage = styled.div`
                 text-decoration: none;
                 p {
                     font-size: 1.7vw;
-                    color: #fee440;
+                    color: #030303;
                     font-weight: 700;
                     transition: all 0.1s ease-in-out;
                     :hover{
@@ -136,36 +138,27 @@ const WorkPage = styled.div`
             margin: 1rem;
         }
     }
-    .prone {
-        color: #fff;
+    .prone, .prthree {
+        color: #030303;
         a {
-            color: #fff;
+            color: #030303;
         }
         
     }
-    .prtwo {
+    .prtwo, .prfour {
         color: #e63946;
         a {
             color: #e63946;
         }
     }
-    .prthree {
-        color: #ffba08;
-        a {
-            color: #ffba08;
-        }
-    }
+    
     .prfour {
-        color: #fdf0d5;
         .links {
             .disabled {
                 cursor: default;
                 pointer-events: none;
             }             
         }
-        a {
-            color: #fdf0d5;  
-        }  
     }
 
     @media (max-width:760px){
@@ -204,6 +197,7 @@ const Main = () => {
                 <div className="info">
                     <h3><span>Front-end</span> developer based in <span>London</span>. This is just the beginning for me.</h3>
                     <h3><span>Simple</span>, spacious designs and easy peasy <span>lemon squeezy</span> builds. That's what I do best.</h3>
+                    <p>...still looking for that junior position...</p>
                 </div>
                 <img src={background} alt="" />
             </About>
@@ -218,7 +212,7 @@ const Main = () => {
                     <div className="project-desc prone">
                         <Zoom clear>
                             <h3><span>na</span>haku</h3>
-                            <p>Design, build and management of the website. Future development will involve converting it into e-commerce platform with its own shop for all the arts and crafts. Website built with React and Sass using styled components. Work in progress</p>
+                            <p>Design, build and management of the website. Future development will involve converting it into e-commerce platform with its own shop for all the arts and crafts. Website built with React and styled components. Work in progress...</p>
                         </Zoom>
                         <div className="links">
                             <a href="https://github.com/laterinthepast/nahaku-v2" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
@@ -230,7 +224,7 @@ const Main = () => {
                     <div className="project-desc prtwo">
                         <Zoom>
                             <h3><span>me</span>llerdramatic</h3>
-                            <p>One of the first projects built with React. Design, build and management of the website. Website will be updated with new designs and tattoo photos. Future development may involve adding a shop for selling Bry's artwork and possibility for NFTs. Website built with React and Sass using styled components.</p>
+                            <p>One of the first projects built with React. Design, build and management of the website (currently waiting for client update). Website will be updated with new designs and tattoo photos. Future development may involve adding a shop for selling Bry's artwork. Website built with React and Sass.</p>
                         </Zoom>
                         <div className="links">
                             <a href="https://github.com/laterinthepast/bry-react" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
@@ -264,7 +258,7 @@ const Main = () => {
                     <div className="project-desc prfour">
                         <Zoom>
                             <h3>crypt<span>o</span>fol<span>i</span>o</h3>
-                            <p>Cryptofolio is my latest project. Cryptocurrencies wallet with charts and all the necesarry info about your fauvorites coins. Will be built on React with Node.js... work in progress</p>
+                            <p>Cryptofolio is my latest project and not yet done. Cryptocurrencies wallet with charts and all the necesarry info about your fauvorites coins. Will be built on React, styled components and Node.js for backend. Work in progress - possible finish by the end of 2021.</p>
                         </Zoom>
 
                         <div className="links">
