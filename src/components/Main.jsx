@@ -32,19 +32,21 @@ const Projects = styled.div`
         }
         &-2 {
             background-color: #f1faee;
+            flex-direction: column-reverse;
         }
         &-3 {
             background-color: #000;
         }
         &-4 {
             background-color: #669bbc;
+            flex-direction: column-reverse;
         }
     }
 `
 const About = styled.div`
     display: flex;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 95vh;
     .info {
         padding: 5vw;
         font-size: 2vw;
@@ -59,17 +61,25 @@ const About = styled.div`
         h3 {
          font-weight: 100;   
         }
-        
-
         span {
             font-weight: 900;
-            
         }
     }
     img {
         width: 50vw;
         object-fit: cover;
-        
+    }
+    @media (max-width:760px){
+        flex-direction: column-reverse;
+        .info {
+            width: 100vw;
+            font-size: 5vw;
+        }
+        img {
+            width: 100vw;
+            padding: 20vw;
+            background: #000;
+        }
     }
 `
 const WorkPage = styled.div`
@@ -153,10 +163,39 @@ const WorkPage = styled.div`
                 pointer-events: none;
             }             
         }
-    a {
-        color: #fdf0d5;  
-    }  
-}
+        a {
+            color: #fdf0d5;  
+        }  
+    }
+
+    @media (max-width:760px){
+        flex-direction: column;
+        height: auto;
+        .img {
+            width: 100vw;
+        }
+        .project-desc {
+            width: 100vw;
+            .links {
+                a {
+                    font-size: 10vw;
+                    p{
+                        font-size: 5vw;
+                    }
+                }
+            }
+        p {
+            font-size: 5vw;
+        }
+        h3 {
+            font-size: 8vw;
+            border-bottom: 1vw solid #fff;
+        }
+        
+        }
+        
+      
+    }
 `
 const Main = () => {
     return (

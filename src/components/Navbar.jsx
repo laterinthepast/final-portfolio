@@ -5,14 +5,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const NavWrapper = styled.div`
-    padding: 1rem;
+    padding: 1vw;
     background: #EF8354;
     position: relative;
+    @media (max-width:760px){
+        height: 15vw;
+    }
 `
 const Links = styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    height: 100%;
 `
 const LeftNav = styled.div`
     display:flex;
@@ -22,8 +26,8 @@ const LeftNav = styled.div`
     .icons {
         a {
             color: #FFF;
-            padding-left: 2rem;
-            font-size: 2rem;
+            padding-left: 4vw;
+            font-size: 3vw;
             transition: all 0.15s ease-in-out;
             :hover { 
                 color: #000;
@@ -31,18 +35,28 @@ const LeftNav = styled.div`
         }
     }
     img {
-        width: 50px;
+        width: 5vw;
+    }
+    @media (max-width:760px){
+        .icons {
+            a {
+                font-size: 8vw;
+            }
+        }
+        img {
+            width: 8vw;
+        }
     }
 `
 const RightNav = styled.div`
     a {
       text-decoration:none; 
       color: #FFF;
-      padding: 1rem;
+      padding: 1vw;
       font-weight: 700;
       transition: all 0.15s ease-in-out;
       :hover {
-          border-bottom: 1px solid #fff;
+          border-bottom: 0.3vw solid #fff;
           color: #000;
       }
     }
