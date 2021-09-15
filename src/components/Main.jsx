@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
 import background from '../images/landing.jpg';
-
 import nahaku from '../images/nahaku.jpg'
 import meller from '../images/meller.jpg'
 import quartz from '../images/quartz.jpg'
 import crypto from '../images/crypto.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Slide from 'react-reveal/Slide'
+import Zoom from 'react-reveal/Zoom';
 
 const MainWrapper = styled.div`
     transition: all 0.3s ease-in-out;
 `
-
 const Projects = styled.div`
     h1 {
         display: flex;
@@ -26,7 +26,6 @@ const Projects = styled.div`
     }
     display: flex;
     flex-direction: column;
-
     .project {
         &-1 {
             background-color: #4F5D75;
@@ -41,7 +40,6 @@ const Projects = styled.div`
             background-color: #669bbc;
         }
     }
-    
 `
 const About = styled.div`
     display: flex;
@@ -174,11 +172,15 @@ const Main = () => {
                 <h1>Projects</h1>
                 <WorkPage className="project-1" id="projects">
                     <div className="img">
-                        <img src={nahaku} alt="nahaku" />
+                        <Slide left>
+                            <img src={nahaku} alt="nahaku" />
+                        </Slide>
                     </div>
                     <div className="project-desc prone">
-                        <h3><span>na</span>haku</h3>
-                        <p>Design, build and management of the website. Future development will involve converting it into e-commerce platform with its own shop for all the arts and crafts. Website built with React and Sass using styled components. Work in progress</p>
+                        <Zoom clear>
+                            <h3><span>na</span>haku</h3>
+                            <p>Design, build and management of the website. Future development will involve converting it into e-commerce platform with its own shop for all the arts and crafts. Website built with React and Sass using styled components. Work in progress</p>
+                        </Zoom>
                         <div className="links">
                             <a href="https://github.com/laterinthepast/nahaku-v2" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="https://nahakutestv2.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
@@ -187,24 +189,32 @@ const Main = () => {
                 </WorkPage>
                 <WorkPage className="project-2">
                     <div className="project-desc prtwo">
-                        <h3><span>me</span>llerdramatic</h3>
-                        <p>One of the first projects built with React. Design, build and management of the website. Website will be updated with new designs and tattoo photos. Future development may involve adding a shop for selling Bry's artwork and possibility for NFTs. Website built with React and Sass using styled components.</p>
+                        <Zoom>
+                            <h3><span>me</span>llerdramatic</h3>
+                            <p>One of the first projects built with React. Design, build and management of the website. Website will be updated with new designs and tattoo photos. Future development may involve adding a shop for selling Bry's artwork and possibility for NFTs. Website built with React and Sass using styled components.</p>
+                        </Zoom>
                         <div className="links">
                             <a href="https://github.com/laterinthepast/bry-react" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="https://mellerdramatic.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
                         </div>
                     </div>
                     <div className="img">
-                        <img src={meller} alt="nahaku" />
+                        <Slide right>
+                            <img src={meller} alt="nahaku" />
+                        </Slide>
                     </div>
                 </WorkPage>
                 <WorkPage className="project-3">
                     <div className="img">
-                        <img src={quartz} alt="nahaku" />
+                        <Slide left>
+                            <img src={quartz} alt="nahaku" />
+                        </Slide>
                     </div>
                     <div className="project-desc prthree">
-                        <h3>quartz sc<span>i</span>en<span>t</span>ific</h3>
-                        <p>Simple landing website for a local business. Design, build and management. Currently awaiting client update. Work in progress</p>
+                        <Zoom>
+                            <h3>quartz sc<span>i</span>en<span>t</span>ific</h3>
+                            <p>Simple landing website for a local business. Design, build and management. Currently awaiting client update. Work in progress</p>
+                        </Zoom>
                         <div className="links">
                             <a href="https://github.com/laterinthepast/quartz-v3" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="https://quartz-scientific.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
@@ -213,25 +223,25 @@ const Main = () => {
                 </WorkPage>
                 <WorkPage className="project-4">
                     <div className="project-desc prfour">
-                        <h3>crypt<span>o</span>fol<span>i</span>o</h3>
-                        <p>Cryptofolio is my latest project. Cryptocurrencies wallet with charts and all the necesarry info about your fauvorites coins. Will be built on React with Node.js... work in progress</p>
+                        <Zoom>
+                            <h3>crypt<span>o</span>fol<span>i</span>o</h3>
+                            <p>Cryptofolio is my latest project. Cryptocurrencies wallet with charts and all the necesarry info about your fauvorites coins. Will be built on React with Node.js... work in progress</p>
+                        </Zoom>
+
                         <div className="links">
                             <a href="https://github.com/laterinthepast/cryptofolio" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="/" className="disabled"><p>visit the site</p></a>
                         </div>
                     </div>
                     <div className="img">
-                        <img src={crypto} alt="nahaku" />
+                        <Slide right>
+                            <img src={crypto} alt="nahaku" />
+                        </Slide>
                     </div>
-
                 </WorkPage>
                 <h1>more to come...</h1>
-
             </Projects>
-
         </MainWrapper>
-
-
     )
 }
 

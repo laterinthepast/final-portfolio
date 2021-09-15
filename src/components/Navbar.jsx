@@ -2,16 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 import mummy from '../images/svgs/mummy.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const NavWrapper = styled.div`
     padding: 1rem;
     background: #EF8354;
     position: relative;
-
 `
-
 const Links = styled.div`
     display:flex;
     justify-content:space-between;
@@ -28,8 +25,7 @@ const LeftNav = styled.div`
             padding-left: 2rem;
             font-size: 2rem;
             transition: all 0.15s ease-in-out;
-            :hover {
-                
+            :hover { 
                 color: #000;
             }
         }
@@ -50,19 +46,10 @@ const RightNav = styled.div`
           color: #000;
       }
     }
-    
 `
-
-
-
 const Navbar = () => {
-
-
-
     return (
         <NavWrapper>
-
-
             <Links>
                 <LeftNav>
                     <a href="/"><img src={mummy} alt="mummy" /></a>
@@ -71,16 +58,12 @@ const Navbar = () => {
                         <a href="https://www.instagram.com/lookmummyicancode/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
                         <a href="https://www.linkedin.com/in/rafal-wrona/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </div>
-
                 </LeftNav>
                 <RightNav>
                     <a href="#projects">my projects</a>
                     {/* <a href="#about">about</a> */}
                 </RightNav>
-
             </Links>
-
-
         </NavWrapper>
     )
 }
