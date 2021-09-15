@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import background from '../images/landing.jpg';
+import background from '../images/landing12.jpg';
 import nahaku from '../images/nahaku.jpg'
 import meller from '../images/meller.jpg'
 import quartz from '../images/quartz.jpg'
