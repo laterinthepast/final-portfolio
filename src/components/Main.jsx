@@ -195,9 +195,9 @@ const Main = () => {
         <MainWrapper>
             <About>
                 <div className="info">
-                    <h3><span>Front-end</span> developer based in <span>London</span>. This is just the beginning for me.</h3>
-                    <h3><span>Simple</span>, spacious designs and easy peasy <span>lemon squeezy</span> builds. That's what I do best.</h3>
-                    <p>...still looking for that junior position...</p>
+                    <h3>Freelance <span>front-end</span> developer based in <span>London</span>. <br/>Turning designs into components and pages using HTML, CSS and JS.</h3>
+                    <h3>/ it's that simple /</h3>
+                    
                 </div>
                 <img src={background} alt="" />
             </About>
