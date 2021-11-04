@@ -5,6 +5,7 @@ import nahaku from '../images/nahaku.jpg'
 import meller from '../images/meller.jpg'
 import quartz from '../images/quartz.jpg'
 import crypto from '../images/crypto.jpg'
+import allday from '../images/allday.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -203,6 +204,23 @@ const Main = () => {
             </About>
             <Projects >
                 <h1>Projects</h1>
+                <WorkPage className="project-2">
+                    <div className="project-desc prtwo">
+                        
+                            <h3><span>all </span>day web</h3>
+                            <p>My attempt of getting extra money while learning coding. Building websites for other people. Web development agency... 1 person agency. </p>
+                        
+                        <div className="links">
+                            <a href="https://github.com/laterinthepast/alldayweb" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://www.alldayweb.co.uk/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
+                        </div>
+                    </div>
+                    <div className="img">
+                        
+                            <img src={allday} alt="nahaku" />
+                        
+                    </div>
+                </WorkPage>
                 <WorkPage className="project-1" id="projects">
                     <div className="img">
                         
