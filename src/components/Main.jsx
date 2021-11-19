@@ -267,7 +267,7 @@ const Main = () => {
                             <p>Simple landing website for a local business. Design, build and management. Currently awaiting client update. Work in progress</p>
                         
                         <div className="links">
-                            <a href="https://github.com/laterinthepast/quartz-v3" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://github.com/laterinthepast/quartz-normal" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="https://quartzsample.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
                         </div>
                     </div>
