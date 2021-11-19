@@ -86,7 +86,7 @@ const Navbar = () => {
                     <a href="/"><img src={mummy} alt="mummy" /></a>
                     <div className="icons">
                         <a href="https://github.com/laterinthepast" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://www.instagram.com/lookmummyicancode/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+                        
                         <a href="https://www.linkedin.com/in/rafal-wrona/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </div>
                 </LeftNav>
