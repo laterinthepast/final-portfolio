@@ -204,7 +204,7 @@ const Main = () => {
             </About>
             <Projects >
                 <h1>Projects</h1>
-                <WorkPage className="project-2">
+                <WorkPage className="project-2" id="projects">
                     <div className="project-desc prtwo">
                         
                             <h3><span>all </span>day web</h3>
@@ -221,7 +221,7 @@ const Main = () => {
                         
                     </div>
                 </WorkPage>
-                <WorkPage className="project-1" id="projects">
+                <WorkPage className="project-1" >
                     <div className="img">
                         
                             <img src={nahaku} alt="nahaku" />
