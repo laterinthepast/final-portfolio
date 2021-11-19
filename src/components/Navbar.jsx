@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import mummy from '../images/svgs/mummy.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const NavWrapper = styled.div`
     padding: 1vw;
