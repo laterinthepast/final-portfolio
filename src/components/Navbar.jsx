@@ -50,6 +50,16 @@ const LeftNav = styled.div`
     }
 `
 const RightNav = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    p {
+        color: #ffe;
+        text-decoration: underline;
+        :hover {
+            color: #fff;
+        }
+    }
     a {
       text-decoration:none; 
       color: #FFF;
@@ -60,6 +70,12 @@ const RightNav = styled.div`
           border-bottom: 0.3vw solid #fff;
           color: #000;
       }
+    }
+    @media (max-width:760px){
+        flex-direction: column;
+        p {
+            font-size: 3vw;
+        }
     }
 `
 const Navbar = () => {
@@ -75,6 +91,7 @@ const Navbar = () => {
                     </div>
                 </LeftNav>
                 <RightNav>
+                    <p>r.t.wrona@gmail.com</p>
                     <a href="#projects">my projects</a>
                     {/* <a href="#about">about</a> */}
                 </RightNav>
