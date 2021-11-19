@@ -268,7 +268,7 @@ const Main = () => {
                         
                         <div className="links">
                             <a href="https://github.com/laterinthepast/quartz-v3" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a href="https://quartz-scientific.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
+                            <a href="https://quartzsample.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
                         </div>
                     </div>
                 </WorkPage>
