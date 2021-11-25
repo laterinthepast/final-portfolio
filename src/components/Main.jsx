@@ -88,7 +88,7 @@ const About = styled.div`
 `
 const WorkPage = styled.div`
     display: flex;
-    height: 50vw;
+    height: auto;
     align-items: center;
     .img {
         padding: 5vw;
