@@ -6,6 +6,8 @@ import meller from '../images/meller.jpg'
 import quartz from '../images/quartz.jpg'
 import crypto from '../images/crypto.jpg'
 import allday from '../images/allday.png'
+import roz from '../images/roztocze.png'
+import quartz2 from '../images/quartz2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -290,6 +292,42 @@ const Main = () => {
                         
                     </div>
                 </WorkPage>
+                <WorkPage className="project-3">
+                    <div className="img">
+                        
+                            <img src={roz} alt="nahaku" />
+                        
+                    </div>
+                    <div className="project-desc prthree">
+                        
+                            <h3>folklo<span>re</span>dan<span>c</span>ing group</h3>
+                            <p>Simple landing website for a folklore group in Poland. Design, build and management. Work in progress</p>
+                        
+                        <div className="links">
+                            <a href="https://github.com/laterinthepast/roztocze_website" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://musing-newton-df970d.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
+                        </div>
+                    </div>
+                </WorkPage>
+                <WorkPage className="project-4">
+                    <div className="project-desc prfour">
+                        
+                            <h3>quartz<span>s</span>cie<span>n</span>tific</h3>
+                            <p>Simple landing website for a local business. Version 2 together with logo design. Design, build and management.</p>
+                        
+
+                        <div className="links">
+                            <a href="https://github.com/laterinthepast/quartz-normal" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://quartzsample.netlify.app/"><p>visit the site</p></a>
+                        </div>
+                    </div>
+                    <div className="img">
+                        
+                            <img src={quartz2} alt="nahaku" />
+                        
+                    </div>
+                </WorkPage>
+
                 <h1>more to come...</h1>
             </Projects>
         </MainWrapper>
