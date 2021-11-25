@@ -300,7 +300,7 @@ const Main = () => {
                     </div>
                     <div className="project-desc prthree">
                         
-                            <h3>folklo<span>re</span>dan<span>c</span>ing group</h3>
+                            <h3>folklo<span>re</span> dan<span>c</span>ing group</h3>
                             <p>Simple landing website for a folklore group in Poland. Design, build and management. Work in progress</p>
                         
                         <div className="links">
