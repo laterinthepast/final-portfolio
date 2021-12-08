@@ -269,8 +269,8 @@ const Main = () => {
                             <p>Simple landing website for a local business. Design, build and management. Currently awaiting client update. Work in progress</p>
                         
                         <div className="links">
-                            <a href="https://github.com/laterinthepast/quartz-normal" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a href="https://quartzsample.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
+                            <a href="https://github.com/laterinthepast/quartz-v3" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://quartz-scientific.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
                         </div>
                     </div>
                 </WorkPage>
@@ -304,8 +304,8 @@ const Main = () => {
                             <p>Simple landing website for a folklore group in Poland. Design, build and management. Work in progress</p>
                         
                         <div className="links">
-                            <a href="https://github.com/laterinthepast/roztocze_website" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a href="https://musing-newton-df970d.netlify.app/" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
+                            <a href="https://github.com/laterinthepast/final-2" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://roztocze.netlify.app/#" rel="noopener noreferrer" target="_blank"><p>visit the site</p></a>
                         </div>
                     </div>
                 </WorkPage>
